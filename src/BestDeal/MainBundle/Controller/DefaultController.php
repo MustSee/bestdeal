@@ -8,7 +8,12 @@ class DefaultController extends Controller
 {
     public function indexAction()
     {
-        return $this->render('BestDealMainBundle:Default:index.html.twig');
+        // Récupérer tous les dessins
+        $ads = $this->get('doctrine')
+            ->getRepository('BestDealMainBundle:Ad')
+            ->findAllAds();
+        $datas = ['ads'=>$ads];
+        return $this->render('BestDealMainBundle:Default:index.html.twig', $datas);
     }
 
     public function showAction () {
@@ -16,6 +21,6 @@ class DefaultController extends Controller
     }
 
     public function createAction() {
-
+        return $this->render('@BestDealMain/Default/create.html.twig');
     }
 }

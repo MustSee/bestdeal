@@ -5,3 +5,7 @@ best_deal_main_homepage:
 best_deal_show:
     path:     /show
     defaults: { _controller: BestDealMainBundle:Default:show }
+
+best_deal_create:
+    path:     /create
+    defaults: { _controller: BestDealMainBundle:Default:create }

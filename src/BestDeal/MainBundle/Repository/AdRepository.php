@@ -10,4 +10,9 @@ namespace BestDeal\MainBundle\Repository;
  */
 class AdRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function findAllAds () {
+        $q = $this->getEntityManager()->createQuery('
+        SELECT a FROM BestDealMainBundle:Ad a ORDER BY a.createdAt DESC');
+        return $q->getResult();
+    }
 }

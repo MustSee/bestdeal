@@ -41,3 +41,13 @@ a:hover {
 .content {
     text-align : left;
 }
+
+.create_form h1 {
+    height: 150px;
+    font-size: 50px;
+    padding-top: 45px;
+    border-radius: 10px;
+    text-align: center;
+    background: violet;
+    background-image: url("../img/bkg1.png");
+}
