@@ -101,28 +101,5 @@ class Picture
     {
         return $this->isMain;
     }
-
-    /**
-     * Set ad
-     *
-     * @param \BestDeal\MainBundle\Entity\Ad $ad
-     *
-     * @return Picture
-     */
-    public function setAd(\BestDeal\MainBundle\Entity\Ad $ad = null)
-    {
-        $this->ad = $ad;
-
-        return $this;
-    }
-
-    /**
-     * Get ad
-     *
-     * @return \BestDeal\MainBundle\Entity\Ad
-     */
-    public function getAd()
-    {
-        return $this->ad;
-    }
 }
+

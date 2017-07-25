@@ -222,49 +222,5 @@ class Ad
     {
         return $this->price;
     }
-
-    /**
-     * Constructor
-     */
-    public function __construct()
-    {
-        $this->category = new \Doctrine\Common\Collections\ArrayCollection();
-        $this->setCreatedAt(new \DateTime());
-        $this->setUpdatedAt(new \DateTime());
-        $this->setIsClosed(false);
-    }
-
-    /**
-     * Add category
-     *
-     * @param \BestDeal\MainBundle\Entity\Category $category
-     *
-     * @return Ad
-     */
-    public function addCategory(\BestDeal\MainBundle\Entity\Category $category)
-    {
-        $this->category[] = $category;
-
-        return $this;
-    }
-
-    /**
-     * Remove category
-     *
-     * @param \BestDeal\MainBundle\Entity\Category $category
-     */
-    public function removeCategory(\BestDeal\MainBundle\Entity\Category $category)
-    {
-        $this->category->removeElement($category);
-    }
-
-    /**
-     * Get category
-     *
-     * @return \Doctrine\Common\Collections\Collection
-     */
-    public function getCategory()
-    {
-        return $this->category;
-    }
 }
+

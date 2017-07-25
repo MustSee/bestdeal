@@ -14,4 +14,8 @@ class DefaultController extends Controller
     public function showAction () {
         return $this->render('@BestDealMain/Default/show.html.twig');
     }
+
+    public function createAction() {
+
+    }
 }
