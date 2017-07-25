@@ -1,0 +1,4 @@
+best_deal_main:
+    resource: "@BestDealMainBundle/Resources/config/routing.yml"
+    prefix:   /
+

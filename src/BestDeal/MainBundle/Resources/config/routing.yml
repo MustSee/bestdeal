@@ -1,0 +1,7 @@
+best_deal_main_homepage:
+    path:     /
+    defaults: { _controller: BestDealMainBundle:Default:index }
+
+best_deal_show:
+    path:     /show
+    defaults: { _controller: BestDealMainBundle:Default:show }

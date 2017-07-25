@@ -1,0 +1,43 @@
+body {
+    padding-top: 50px;
+    background-color:greenyellow;
+}
+
+.category {
+    margin-top:10px;
+    text-align: center;
+    font-size: larger;
+}
+
+hr {
+    border : 1px solid white;
+}
+
+a {
+    color : black;
+}
+
+a:hover {
+    style:none;
+    text-decoration: none;
+    color: maroon;
+}
+
+.annonce {
+    margin: 10px 0 60px 0;
+    font-size: larger;
+}
+
+.annonce_detail {
+    margin-top: 80px;
+    font-size: larger;
+    text-align: left;
+}
+
+.annonce_detail img {
+    border : 3px solid #1b6d85;
+}
+
+.content {
+    text-align : left;
+}
